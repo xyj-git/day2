@@ -1,0 +1,103 @@
+body,
+html,
+.wrap {
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+  box-sizing: border-box;
+  overflow: hidden; }
+
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  box-sizing: border-box; }
+
+li {
+  list-style: none; }
+
+body {
+  font-size: 0.32rem; }
+
+.wrap {
+  width: 100%;
+  display: flex;
+  flex-direction: column; }
+
+.header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+  height: .88rem;
+  color: #eee;
+  background: black;
+  padding-left: .2rem; }
+  .header span {
+    font-size: .28rem; }
+  .header p {
+    padding-left: .2rem; }
+
+.main {
+  position: relative;
+  width: 100%;
+  overflow-y: scroll;
+  flex-grow: 1; }
+  .main .mark {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #999;
+    padding: 2rem .2rem; }
+    .main .mark .dialog {
+      width: 100%;
+      height: 100%;
+      background: #fff;
+      border-radius: 5px;
+      padding: 1rem .2rem;
+      text-align: center; }
+      .main .mark .dialog .logo {
+        width: 50%;
+        height: 1rem;
+        margin-left: 25%; }
+        .main .mark .dialog .logo img {
+          width: 100%;
+          height: 100%; }
+      .main .mark .dialog p {
+        padding-top: .2rem;
+        width: 50%;
+        margin-left: 25%;
+        margin-bottom: .5rem; }
+      .main .mark .dialog li {
+        display: flex;
+        width: 100%;
+        height: 1rem;
+        border-bottom: 1px solid #eee;
+        align-items: center; }
+        .main .mark .dialog li .icon {
+          width: .4rem;
+          height: .5rem;
+          margin: 0 .2rem; }
+          .main .mark .dialog li .icon img {
+            width: 100%;
+            height: 100%; }
+        .main .mark .dialog li input {
+          width: 60%;
+          height: .8rem;
+          border: none;
+          outline: none; }
+      .main .mark .dialog button {
+        margin-top: 1rem;
+        width: 100%;
+        height: .8rem;
+        background: green;
+        color: #fff;
+        line-height: .8rem;
+        text-align: center;
+        border: none;
+        outline: none;
+        border-radius: 5px; }
+
+/*# sourceMappingURL=style.css.map */

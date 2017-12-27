@@ -1,0 +1,124 @@
+%pull {
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+body,
+html,
+.wrap {
+    @extend %pull;
+}
+
+li {
+    list-style: none;
+}
+
+body {
+    font-size: 0.32rem;
+}
+
+.wrap {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+    height: .88rem;
+    color: #eee;
+    background: black;
+    padding-left: .2rem;
+    span {
+        font-size: .28rem;
+    }
+    p {
+        padding-left: .2rem;
+    }
+}
+
+.main {
+    position: relative;
+    width: 100%;
+    overflow-y: scroll;
+    flex-grow: 1;
+    .mark {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background: #999;
+        padding: 2rem .2rem;
+        .dialog {
+            width: 100%;
+            height: 100%;
+            background: #fff;
+            border-radius: 5px;
+            padding: 1rem .2rem;
+            text-align: center;
+            .logo {
+                width: 50%;
+                height: 1rem;
+                margin-left: 25%;
+                img {
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+            p {
+                padding-top: .2rem;
+                width: 50%;
+                margin-left: 25%;
+                margin-bottom: .5rem;
+            }
+            li {
+                display: flex;
+                width: 100%;
+                height: 1rem;
+                border-bottom: 1px solid #eee;
+                align-items: center;
+                .icon {
+                    width: .4rem;
+                    height: .5rem;
+                    margin: 0 .2rem;
+                    img {
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+                input {
+                    width: 60%;
+                    height: .8rem;
+                    border: none;
+                    outline: none;
+                }
+            }
+            button {
+                margin-top: 1rem;
+                width: 100%;
+                height: .8rem;
+                background: green;
+                color: #fff;
+                line-height: .8rem;
+                text-align: center;
+                border: none;
+                outline: none;
+                border-radius: 5px;
+            }
+        }
+    }
+}
